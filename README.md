@@ -10,8 +10,11 @@ ________________________________________
 
 Predicting sales from comment data presents several non-trivial hurdles:
 •	Sparse & Noisy Data: Fragmented datasets due to system migrations, with some products having only 1–3 data points per month.
+
 •	Dynamic Entity Mapping: Product "Keys" on JD.com are non-static; a single ID might represent Red Wine for one quarter and be repurposed for White Wine the next.
+
 •	Long-Tail Distribution: Highly imbalanced data across the alcoholic beverage category.
+
 •	Signal Uncertainty: Determining if a correlation exists between the timing of a comment and the timing of a transaction.
 
 ________________________________________
