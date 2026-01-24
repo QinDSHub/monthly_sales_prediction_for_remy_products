@@ -7,8 +7,8 @@ Despite significant data constraints and high noise levels, this "impossible tas
 
 ________________________________________
 🧠 Technical Challenges & Complexity
-
 Predicting sales from comment data presents several non-trivial hurdles:
+
 •	Sparse & Noisy Data: Fragmented datasets due to system migrations, with some products having only 1–3 data points per month.
 
 •	Dynamic Entity Mapping: Product "Keys" on JD.com are non-static; a single ID might represent Red Wine for one quarter and be repurposed for White Wine the next.
