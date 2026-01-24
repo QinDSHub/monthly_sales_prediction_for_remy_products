@@ -1,7 +1,7 @@
 📌 Project Overview
 
 This project was initiated as a high-stakes feasibility study for a VIP client in the luxury spirits sector (Rémy Cointreau). The objective was to infer monthly sales volumes on the JD.com platform using unstructured consumer comment metadata as a proxy.
-Despite significant data constraints and high noise levels, this "impossible task" resulted in a mathematical framework that the client successfully adopted to inform their marketing strategies and inventory management.
+Despite significant data constraints and high noise levels, this "impossible task" resulted in a mathematical framework that the client successfully adopted to inform their marketing strategies and inventory management with R2 score at 0.86.
 
 ________________________________________
 🧠 Technical Challenges & Complexity
