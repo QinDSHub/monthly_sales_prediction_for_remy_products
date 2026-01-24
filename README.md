@@ -1,5 +1,3 @@
-E-Commerce Sales Inference via Consumer Engagement Proxies
-
 📌 Project Overview
 
 This project was initiated as a high-stakes feasibility study for a VIP client in the luxury spirits sector (Rémy Cointreau). The objective was to infer monthly sales volumes on the JD.com platform using unstructured consumer comment metadata as a proxy.
