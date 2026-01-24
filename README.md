@@ -37,14 +37,20 @@ Instead of static weights, I leveraged a parameter search approach using limited
 ________________________________________
 
 📈 Business Impact & Client Adoption
+
 While initially framed as an exploratory experiment, the model's ability to capture sales trends from public-facing metadata provided the client with a unique competitive advantage:
+
 •	Strategic Pivot: Enabled the client to adjust marketing spend based on the "engagement-to-sales" lag identified by the model.
+
 •	Inventory Heuristics: Provided a reference point for stock replenishment in regions where direct sales data was delayed.
+
 •	Success out of "Impossibility": The client ultimately moved this from a "test case" to a production-referenced tool for internal decision-making.
 
 ________________________________________
 📂 Key Takeaways
 
 ☑ Mathematical Intuition: Ability to decompose business problems into solvable linear equations.
+
 ☑ Client Management: Managed expectations for a "practically infeasible" project while delivering a "practically useful" outcome.
+
 ☑ Data Scarcity Strategy: Expert at extracting signal from noisy, small, and long-tail datasets.
