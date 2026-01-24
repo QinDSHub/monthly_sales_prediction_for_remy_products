@@ -9,13 +9,9 @@ ________________________________________
 🧠 Technical Challenges & Complexity
 
 Predicting sales from comment data presents several non-trivial hurdles:
-
 •	Sparse & Noisy Data: Fragmented datasets due to system migrations, with some products having only 1–3 data points per month.
-
 •	Dynamic Entity Mapping: Product "Keys" on JD.com are non-static; a single ID might represent Red Wine for one quarter and be repurposed for White Wine the next.
-
 •	Long-Tail Distribution: Highly imbalanced data across the alcoholic beverage category.
-
 •	Signal Uncertainty: Determining if a correlation exists between the timing of a comment and the timing of a transaction.
 
 ________________________________________
@@ -23,17 +19,17 @@ ________________________________________
 
 To solve the lack of direct sales data, we developed a logic to derive Sales Volume ($V$) from Incremental Comments ($C$).
 
-1. The Core Hypothesis
+☑ The Core Hypothesis
 The relationship was modeled as a weighted sum of current and lagged comment activities:
 $$V_{April} = w_1C_1 + w_2C_2 + w_3C_3$$
 Where $w_n$ represents the conversion ratio of users who purchased in month $n$ but commented in April.
 
-3. Formula Optimization & Simplification
+☑ Formula Optimization & Simplification
 Through continuous derivation and assumption testing, I simplified the complex multi-lag model into a more robust Dual-Variable Model:
 $$V_{April} = \alpha_1C_1 + \alpha_2C_2$$
 Testing proved that this Formula (B) significantly outperformed simpler single-variable models by capturing the "lagged" nature of consumer feedback while maintaining model stability.
 
-4. Dynamic Parameter Search
+☑ Dynamic Parameter Search
 Instead of static weights, I leveraged a parameter search approach using limited ground-truth sales samples to identify the optimal $\alpha_1$ and $\alpha_2$ for each specific month. This accounted for seasonal variations in consumer behavior (e.g., Chinese New Year or 6.18 shopping festivals).
 ________________________________________
 
@@ -46,6 +42,6 @@ While initially framed as an exploratory experiment, the model's ability to capt
 ________________________________________
 📂 Key Takeaways
 
-1.	Mathematical Intuition: Ability to decompose business problems into solvable linear equations.
-2.	Client Management: Managed expectations for a "practically infeasible" project while delivering a "practically useful" outcome.
-3.	Data Scarcity Strategy: Expert at extracting signal from noisy, small, and long-tail datasets.
+☑ Mathematical Intuition: Ability to decompose business problems into solvable linear equations.
+☑ Client Management: Managed expectations for a "practically infeasible" project while delivering a "practically useful" outcome.
+☑ Data Scarcity Strategy: Expert at extracting signal from noisy, small, and long-tail datasets.
