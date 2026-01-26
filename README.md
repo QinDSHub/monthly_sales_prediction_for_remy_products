@@ -1,10 +1,10 @@
-📂 Project Overview
+## 📂 Project Overview
 
 This project was initiated as a high-stakes feasibility study for a VIP client in the luxury spirits sector (Rémy Cointreau). The objective was to infer monthly sales volumes on the JD.com platform using unstructured consumer comment metadata as a proxy.
 Despite significant data constraints and high noise levels, this "impossible task" resulted in a mathematical framework that the client successfully adopted to inform their marketing strategies and inventory management with R2 score at 0.86.
 
 ________________________________________
-📂 Technical Challenges & Complexity
+## 📂 Technical Challenges & Complexity
 
 Predicting sales from comment data presents several non-trivial hurdles:
 
@@ -17,7 +17,7 @@ Predicting sales from comment data presents several non-trivial hurdles:
 •	Signal Uncertainty: Determining if a correlation exists between the timing of a comment and the timing of a transaction.
 
 ________________________________________
-📂 Methodological Innovation: Mathematical Decomposition
+## 📂 Methodological Innovation: Mathematical Decomposition
 
 To solve the lack of direct sales data, we developed a logic to derive Sales Volume ($V$) from Incremental Comments ($C$).
 
@@ -35,7 +35,7 @@ Testing proved that this Formula (B) significantly outperformed simpler single-v
 Instead of static weights, I leveraged a parameter search approach using limited ground-truth sales samples to identify the optimal $\alpha_1$ and $\alpha_2$ for each specific month. This accounted for seasonal variations in consumer behavior (e.g., Chinese New Year or 6.18 shopping festivals).
 ________________________________________
 
-📂 Business Impact & Client Adoption
+## 📂 Business Impact & Client Adoption
 
 While initially framed as an exploratory experiment, the model's ability to capture sales trends from public-facing metadata provided the client with a unique competitive advantage:
 
@@ -46,7 +46,7 @@ While initially framed as an exploratory experiment, the model's ability to capt
 •	Success out of "Impossibility": The client ultimately moved this from a "test case" to a production-referenced tool for internal decision-making.
 
 ________________________________________
-📂 Key Takeaways
+## 📂 Key Takeaways
 
 ☑ Mathematical Intuition: Ability to decompose business problems into solvable linear equations.
 
