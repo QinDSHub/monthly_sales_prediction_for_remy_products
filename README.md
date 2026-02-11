@@ -24,7 +24,7 @@ To solve the lack of direct sales data, we developed a logic to derive Sales Vol
 ☑ The Core Hypothesis
 The relationship was modeled as a weighted sum of current and lagged comment activities:
 
-$$V_{April} = w_1C_1 + w_2C_2 + w_3C_3$$
+$$V_{April}=w_1C_1+w_2C_2+w_3C_3$$
 
 Where $w_n$ represents the conversion ratio of users who purchased in month $n$ but commented in April.
 
