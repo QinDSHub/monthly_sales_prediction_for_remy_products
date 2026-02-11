@@ -22,16 +22,12 @@ ________________________________________
 To solve the lack of direct sales data, we developed a logic to derive Sales Volume ($V$) from Incremental Comments ($C$).
 
 ☑ The Core Hypothesis
-The relationship was modeled as a weighted sum of current and lagged comment activities:
-
-$$V_{April}=w_1C_1+w_2C_2+w_3C_3$$
+The relationship was modeled as a weighted sum of current and lagged comment activities: V(April) = w1*c1+w2*c2+w3*c3
 
 Where $w_n$ represents the conversion ratio of users who purchased in month $n$ but commented in April.
 
 ☑ Formula Optimization & Simplification
-Through continuous derivation and assumption testing, I simplified the complex multi-lag model into a more robust Dual-Variable Model:
-
-$$V_{April} = \alpha_1C_1 + \alpha_2C_2$$
+Through continuous derivation and assumption testing, I simplified the complex multi-lag model into a more robust Dual-Variable Model: V(April) = alpha1*c1 + alpha2*c2
 
 Testing proved that this Formula (B) significantly outperformed simpler single-variable models by capturing the "lagged" nature of consumer feedback while maintaining model stability.
 
